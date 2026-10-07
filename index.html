@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Devansh Sharma - 1st Year B.Tech Computer Science & Engineering student, problem solver in C++, and aspiring software engineer.">
+  <meta name="keywords" content="Devansh Sharma, B.Tech CSE, Portfolio, Computer Science, C++, DSA, Web Development, Minimalist, Dark Aesthetic">
+  <meta name="author" content="Devansh Sharma">
+  <title>Devansh Sharma // 1st Year B.Tech CSE Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="Home">
+        <span class="logo-code">//</span>
+        <span class="logo-name">Devansh</span>
+        <span class="logo-accent">.sh</span>
+      </a>
+
+      <!-- Desktop & Tablet Navigation Menu -->
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Arsenal</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#achievements" class="nav-link">Quest Log</a></li>
+          <li class="nav-item"><a href="#career-goals" class="nav-link">Roadmap</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Mobile Menu Socials -->
+        <div class="mobile-menu-socials">
+          <a href="https://github.com/devanshsharma" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="https://linkedin.com/in/devanshsharma" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Header Action Controls -->
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Social Icons in Header (Desktop) -->
+        <div class="header-socials">
+          <a href="https://github.com/devanshsharma" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile" title="GitHub Profile">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/devanshsharma" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Hamburger Menu Button -->
+        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero section" id="home">
+      <!-- Dark Subtle Grid Overlay & Ambient Blobs -->
+      <div class="cyber-grid-bg" aria-hidden="true"></div>
+      <div class="hero-bg-blobs" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <!-- Cyber & Transformers Easter Egg Badge -->
+          <div class="badge-status">
+            <span class="status-dot"></span>
+            <span class="badge-mono-text">AUTOBOT PROTOCOL // ROLL OUT ⚡ • 1ST YEAR B.TECH CSE</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Devansh Sharma</span>
+          </h1>
+
+          <div class="hero-typewriter-wrapper">
+            <span class="type-prefix">I am a </span>
+            <span class="typed-text" id="typed-text"></span>
+            <span class="type-cursor" aria-hidden="true">_</span>
+          </div>
+
+          <p class="hero-description">
+            Freshman Computer Science &amp; Engineering undergraduate architecting clean code from the ground up. Inspired by the resilience of Cybertronian engineering and the daily grind of <em>Solo Leveling</em>—mastering Data Structures in C++, crafting responsive web interfaces, and building scalable software.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Deployed Work</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Initialize Contact</span>
+            </a>
+            <a href="#about" class="btn btn-outline" id="resume-download-btn">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Resume.pdf</span>
+            </a>
+          </div>
+
+          <!-- Quick Stats Pill Bar -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">1st</span>
+              <span class="stat-label">Year Undergrad</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">9.3</span>
+              <span class="stat-label">Current CGPA</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">150+</span>
+              <span class="stat-label">LeetCode Quests</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Artifacts Built</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-card-wrapper">
+            <div class="avatar-card glass-panel">
+              <!-- Cyber Terminal Header -->
+              <div class="card-terminal-header">
+                <span class="term-dot red"></span>
+                <span class="term-dot yellow"></span>
+                <span class="term-dot green"></span>
+                <span class="term-title">devansh_prime.cpp</span>
+              </div>
+              <div class="code-preview">
+                <pre><code><span class="c-comment">// "More than meets the eye." — Optimus Prime</span>
+<span class="c-keyword">#include</span> <span class="c-string">&lt;iostream&gt;</span>
+<span class="c-keyword">#include</span> <span class="c-string">&lt;vector&gt;</span>
+
+<span class="c-keyword">class</span> <span class="c-class">DevanshSharma</span> {
+<span class="c-keyword">public</span>:
+    std::string role = <span class="c-string">"Freshman CSE '29"</span>;
+    std::string motto = <span class="c-string">"Arise &amp; Code"</span>; <span class="c-comment">// Solo Leveling</span>
+    std::string domain = <span class="c-string">"Infinite Loop"</span>; <span class="c-comment">// JJK</span>
+
+    <span class="c-type">void</span> <span class="c-func">transform</span>() {
+        <span class="c-comment">// Hello friend. Ready to build.</span>
+        std::cout &lt;&lt; <span class="c-string">"Transforming caffeine into O(1) logic!\n"</span>;
+    }
+};</code></pre>
+              </div>
+
+              <!-- Minimalist Floating Badges with Easter Eggs -->
+              <div class="floating-badge badge-top-right">
+                <span class="badge-icon">🗡️</span>
+                <div>
+                  <div class="badge-title">Solo Leveling Grind</div>
+                  <div class="badge-subtitle">Daily Algorithm Quests Active</div>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom-left">
+                <span class="badge-icon">🦾</span>
+                <div>
+                  <div class="badge-title">Autobot Engineer</div>
+                  <div class="badge-subtitle">B.Tech CSE • Class of 2029</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-down-hint">
+        <a href="#about" aria-label="Scroll down to About section">
+          <span class="mouse">
+            <span class="wheel"></span>
+          </span>
+          <span class="hint-text">scroll_down // explore</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ME SECTION ==================== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// 01. PROTOCOL &amp; ORIGIN</span>
+          <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+          <p class="section-subtitle">A glimpse into what fuels my curiosity, my mindset, and how I'm engineering my freshman journey.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-image-column">
+            <div class="profile-card glass-panel">
+              <div class="avatar-circle">
+                <!-- Minimalist Cyber Geometric Avatar -->
+                <svg viewBox="0 0 120 120" class="avatar-svg" aria-label="Devansh profile emblem">
+                  <defs>
+                    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#00f0ff" />
+                      <stop offset="100%" stop-color="#8b5cf6" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="60" cy="60" r="56" fill="none" stroke="url(#avatarGrad)" stroke-width="1.5" stroke-dasharray="8 4"/>
+                  <polygon points="60,24 88,42 88,78 60,96 32,78 32,42" fill="none" stroke="url(#avatarGrad)" stroke-width="1.5" opacity="0.6"/>
+                  <circle cx="60" cy="48" r="16" fill="url(#avatarGrad)" opacity="0.85"/>
+                  <path d="M38 90c0-12 10-22 22-22s22 10 22 22" fill="none" stroke="url(#avatarGrad)" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3 class="profile-name">Devansh Sharma</h3>
+              <p class="profile-role">B.Tech 1st Year (CSE)</p>
+              <p class="profile-campus">📍 National Institute of Technology / Tech Univ</p>
+
+              <div class="profile-highlights">
+                <div class="highlight-item">
+                  <span class="hl-label">Major:</span>
+                  <span class="hl-value">Computer Science &amp; Engg</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="hl-label">Semester:</span>
+                  <span class="hl-value">Sem 2 (Freshman)</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="hl-label">Class:</span>
+                  <span class="hl-value text-cyber">Builder // S-Rank Seeker</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="hl-label">Status:</span>
+                  <span class="hl-value green-text">Available Summer '26</span>
+                </div>
+              </div>
+
+              <!-- Quick Connect Buttons -->
+              <div class="profile-social-row">
+                <a href="https://github.com/devanshsharma" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" title="GitHub">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://linkedin.com/in/devanshsharma" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" title="LinkedIn">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-text-column">
+            <h3 class="about-heading">Transforming Curiosity into Resilient Code</h3>
+            <p class="lead-text">
+              I am currently in my <strong>first year of B.Tech in Computer Science &amp; Engineering</strong>. Like Optimus Prime said: <em>"There's a thin line between being a hero and being a memory."</em> In software engineering, that line is discipline and strong fundamentals.
+            </p>
+            <p>
+              I treat every problem like a quest from <em>Solo Leveling</em>: starting from ground zero, taking on algorithmic challenges every day in C++, understanding how memory moves in pointers, and leveling up my mental model until complex problems become second nature.
+            </p>
+            <p>
+              Much like the curiosity in <em>Mr. Robot</em>, I love finding out what actually happens under the surface—from operating system file buffers and binary structures to HTTP protocols and clean web architectures. Being a freshman gives me the hunger to ship projects, fail fast, and iterate constantly.
+            </p>
+
+            <!-- 4 Minimalist Engineering Pillars with Pop Culture Easter Eggs -->
+            <div class="pillars-grid">
+              <div class="pillar-card glass-panel">
+                <div class="pillar-icon">🦾</div>
+                <h4>Autobot Architecture</h4>
+                <p>Modular, adaptive, and scalable design. Code that transforms cleanly under any problem constraint.</p>
+              </div>
+
+              <div class="pillar-card glass-panel">
+                <div class="pillar-icon">🗡️</div>
+                <h4>Solo Leveling Grind</h4>
+                <p>Treating LeetCode as daily quests. Continuous practice that turns an E-Rank freshman into an S-Rank engineer.</p>
+              </div>
+
+              <div class="pillar-card glass-panel">
+                <div class="pillar-icon">🌀</div>
+                <h4>Domain Expansion</h4>
+                <p>Deep flow state focus. Breaking down intricate recursion trees, graphs, and O(1) space optimizations.</p>
+              </div>
+
+              <div class="pillar-card glass-panel">
+                <div class="pillar-icon">🤖</div>
+                <h4>Mr. Robot Curiosity</h4>
+                <p>Uncovering the low level: memory, binary streams, Linux commands, and secure, high-efficiency web systems.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION SECTION ==================== -->
+    <section class="education section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// 02. ACADEMIC ARCHIVE</span>
+          <h2 class="section-title">My <span class="text-gradient">Education</span></h2>
+          <p class="section-subtitle">Consistent academic foundation and a record of technical curiosity.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1: B.Tech (Current) -->
+          <div class="timeline-item current-step">
+            <div class="timeline-dot">
+              <span class="inner-dot"></span>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-badge badge-active">Active Quest • 1st Year Undergrad</span>
+                  <h3 class="timeline-degree">Bachelor of Technology (B.Tech) in Computer Science &amp; Engineering</h3>
+                  <h4 class="timeline-institution">National Institute of Technology / Engineering College, India</h4>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-period">2025 — 2029 (Expected)</span>
+                  <span class="timeline-grade">CGPA: <strong>9.3 / 10</strong> (Sem 1 &amp; 2)</span>
+                </div>
+              </div>
+              <p class="timeline-desc">
+                Engaging deeply with computational thinking, data structures, and core programming paradigms. Actively participating in collegiate hackathons, developer student chapters, and competitive programming.
+              </p>
+              <div class="timeline-coursework">
+                <span class="course-label">Core Coursework &amp; Modules:</span>
+                <div class="tag-group">
+                  <span class="tag">Problem Solving &amp; C Programming</span>
+                  <span class="tag">Object-Oriented Programming (C++)</span>
+                  <span class="tag">Discrete Mathematics</span>
+                  <span class="tag">Digital Electronics &amp; Logic Design</span>
+                  <span class="tag">Engineering Calculus &amp; Linear Algebra</span>
+                  <span class="tag">Web Architecture Fundamentals</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Class XII Senior Secondary -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-badge">Senior Secondary (CBSE / State Board)</span>
+                  <h3 class="timeline-degree">Class XII (Senior Secondary School Examination)</h3>
+                  <h4 class="timeline-institution">Delhi Public School / Model Senior Secondary School</h4>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-period">2023 — 2025</span>
+                  <span class="timeline-grade">Percentage: <strong>95.4%</strong> (PCM + CS)</span>
+                </div>
+              </div>
+              <p class="timeline-desc">
+                Focused on Physics, Chemistry, Mathematics, and Computer Science (Python &amp; SQL). Awarded Academic Excellence Certificate for placing in top 1% batch percentile.
+              </p>
+              <div class="timeline-coursework">
+                <span class="course-label">Highlights:</span>
+                <div class="tag-group">
+                  <span class="tag">98/100 in Computer Science</span>
+                  <span class="tag">96/100 in Mathematics</span>
+                  <span class="tag">Lead, High School Science &amp; Tech Society</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Class X Secondary -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-badge">Secondary School</span>
+                  <h3 class="timeline-degree">Class X (Secondary School Examination)</h3>
+                  <h4 class="timeline-institution">Delhi Public School / High School</h4>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-period">2022 — 2023</span>
+                  <span class="timeline-grade">Percentage: <strong>96.8%</strong></span>
+                </div>
+              </div>
+              <p class="timeline-desc">
+                High merit across mathematics, sciences, and analytical studies. Sparked early passion for algorithms and software building.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// 03. ARSENAL &amp; TECH STACK</span>
+          <h2 class="section-title">Skills &amp; <span class="text-gradient">Proficiencies</span></h2>
+          <p class="section-subtitle">Battle-tested tools, languages, and concepts applied across projects and competitive programming.</p>
+        </div>
+
+        <!-- Category Grid -->
+        <div class="skills-grid">
+          <!-- Card 1: Programming Languages -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <div class="cat-icon-box">💻</div>
+              <div>
+                <h3 class="category-title">Core Languages</h3>
+                <p class="category-desc">Problem solving &amp; systems engineering</p>
+              </div>
+            </div>
+            <div class="skill-bars-list">
+              <div class="skill-bar-item">
+                <div class="bar-info">
+                  <span class="bar-name">C / C++ (STL, Pointers &amp; OOP)</span>
+                  <span class="bar-percent">85% // Lv. 85</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 85%;"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="bar-info">
+                  <span class="bar-name">Python (Automation &amp; Scripting)</span>
+                  <span class="bar-percent">75% // Lv. 75</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 75%;"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="bar-info">
+                  <span class="bar-name">JavaScript (ES6+, Async/Await)</span>
+                  <span class="bar-percent">70% // Lv. 70</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 70%;"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="bar-info">
+                  <span class="bar-name">SQL (Queries &amp; Relational Schema)</span>
+                  <span class="bar-percent">65% // Lv. 65</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 65%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Web Development -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <div class="cat-icon-box">🌐</div>
+              <div>
+                <h3 class="category-title">Web Interfaces</h3>
+                <p class="category-desc">Modern, responsive, user-friendly frontend</p>
+              </div>
+            </div>
+            <div class="skill-chips-group">
+              <span class="skill-chip">
+                <span class="chip-dot"></span> Semantic HTML5
+              </span>
+              <span class="skill-chip">
+                <span class="chip-dot"></span> CSS3 / Modern Flexbox &amp; Grid
+              </span>
+              <span class="skill-chip">
+                <span class="chip-dot"></span> JavaScript DOM Manipulation
+              </span>
+              <span class="skill-chip">
+                <span class="chip-dot"></span> Mobile-First Responsive Design
+              </span>
+              <span class="skill-chip">
+                <span class="chip-dot"></span> Dark Mode &amp; Glassmorphism UI
+              </span>
+              <span class="skill-chip">
+                <span class="chip-dot"></span> RESTful API Integrations
+              </span>
+              <span class="skill-chip">
+                <span class="chip-dot"></span> LocalStorage API
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 3: Core CS & Problem Solving -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <div class="cat-icon-box">🧩</div>
+              <div>
+                <h3 class="category-title">CS Fundamentals</h3>
+                <p class="category-desc">Algorithmic complexity &amp; software principles</p>
+              </div>
+            </div>
+            <div class="skill-chips-group">
+              <span class="skill-chip highlight-chip">
+                <span class="chip-dot"></span> Data Structures (Arrays, Linked Lists, Vectors)
+              </span>
+              <span class="skill-chip highlight-chip">
+                <span class="chip-dot"></span> Stacks, Queues &amp; Recursion Trees
+              </span>
+              <span class="skill-chip">
+                <span class="chip-dot"></span> Object-Oriented Programming (OOP)
+              </span>
+              <span class="skill-chip">
+                <span class="chip-dot"></span> Time &amp; Space Complexity Analysis
+              </span>
+              <span class="skill-chip">
+                <span class="chip-dot"></span> Binary Search &amp; Two Pointers
+              </span>
+              <span class="skill-chip">
+                <span class="chip-dot"></span> Bit Manipulation &amp; Math Heuristics
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 4: Tools & Workflow -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <div class="cat-icon-box">🛠️</div>
+              <div>
+                <h3 class="category-title">Developer Tools</h3>
+                <p class="category-desc">Everyday terminal, version control &amp; testing</p>
+              </div>
+            </div>
+            <div class="skill-chips-group">
+              <span class="skill-chip"><span class="chip-dot"></span> Git &amp; GitHub</span>
+              <span class="skill-chip"><span class="chip-dot"></span> VS Code / Neovim</span>
+              <span class="skill-chip"><span class="chip-dot"></span> Linux / Bash Terminal</span>
+              <span class="skill-chip"><span class="chip-dot"></span> Chrome DevTools</span>
+              <span class="skill-chip"><span class="chip-dot"></span> Postman (API Testing)</span>
+              <span class="skill-chip"><span class="chip-dot"></span> Markdown Documentation</span>
+              <span class="skill-chip"><span class="chip-dot"></span> Figma UI Prototyping</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills Minimalist Bar -->
+        <div class="soft-skills-card glass-panel">
+          <div class="soft-skills-title">⚡ Mindset &amp; Work Ethic:</div>
+          <div class="soft-tags">
+            <span class="soft-tag">Rapid Self-Learner</span>
+            <span class="soft-tag">Autobot Adaptability</span>
+            <span class="soft-tag">Team Collaboration</span>
+            <span class="soft-tag">Technical Documentation</span>
+            <span class="soft-tag">Relentless Problem Solver</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// 04. DEPLOYED ARTIFACTS</span>
+          <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+          <p class="section-subtitle">Real web applications, algorithmic engines, and student utilities engineered during year one.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters" role="tablist" aria-label="Project categories">
+          <button class="filter-btn active" data-filter="all">All Artifacts (6)</button>
+          <button class="filter-btn" data-filter="web">Web Apps</button>
+          <button class="filter-btn" data-filter="algorithms">C++ &amp; DSA</button>
+          <button class="filter-btn" data-filter="tools">Student Utilities</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project 1: AllSpark // CampusConnect -->
+          <article class="project-card glass-panel" data-category="web tools">
+            <div class="project-card-top">
+              <div class="project-badge">Transformers // AllSpark</div>
+              <div class="project-links">
+                <a href="https://github.com/devanshsharma" target="_blank" rel="noopener noreferrer" class="proj-icon-btn" title="Source Code" aria-label="View source code on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="#contact" class="proj-icon-btn preview-action-btn" data-project-id="1" title="View Details" aria-label="Open detailed project modal">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">AllSpark // CampusConnect Academic Hub</h3>
+              <p class="project-summary">
+                A high-utility college companion dashboard. Powers dynamic timetable synchronization, weighted GPA &amp; SGPA calculations, attendance threshold alerts (75% rule), and categorized course notes.
+              </p>
+              <div class="tech-stack-pills">
+                <span class="tech-pill">JavaScript ES6</span>
+                <span class="tech-pill">CSS Glassmorphism</span>
+                <span class="tech-pill">LocalStorage API</span>
+                <span class="tech-pill">Responsive UI</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <button class="btn btn-sm btn-outline open-modal-btn" data-project="campus-connect">Read Mission Report</button>
+              <span class="project-stat">⭐ 100+ Classmates Used</span>
+            </div>
+          </article>
+
+          <!-- Project 2: SortVision // Domain Expansion -->
+          <article class="project-card glass-panel" data-category="algorithms web">
+            <div class="project-card-top">
+              <div class="project-badge badge-accent">JJK // Domain Expansion</div>
+              <div class="project-links">
+                <a href="https://github.com/devanshsharma" target="_blank" rel="noopener noreferrer" class="proj-icon-btn" title="Source Code" aria-label="View source code on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="#contact" class="proj-icon-btn preview-action-btn" data-project-id="2" title="View Details" aria-label="Open detailed project modal">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">SortVision // Real-Time DSA Visualizer</h3>
+              <p class="project-summary">
+                An algorithm animation canvas bringing Bubble Sort, Selection Sort, Merge Sort, and Quick Sort to life. Features step-by-step playback, pitch-frequency audio synthesis, and real-time comparison counters.
+              </p>
+              <div class="tech-stack-pills">
+                <span class="tech-pill">HTML5 Canvas</span>
+                <span class="tech-pill">Async/Await Loops</span>
+                <span class="tech-pill">Web Audio API</span>
+                <span class="tech-pill">Algorithm Analysis</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <button class="btn btn-sm btn-outline open-modal-btn" data-project="sort-vision">Read Mission Report</button>
+              <span class="project-stat">⚡ 4 Sorting Heuristics</span>
+            </div>
+          </article>
+
+          <!-- Project 3: Cybertron Core // Student CLI -->
+          <article class="project-card glass-panel" data-category="algorithms">
+            <div class="project-card-top">
+              <div class="project-badge">C++17 // Systems</div>
+              <div class="project-links">
+                <a href="https://github.com/devanshsharma" target="_blank" rel="noopener noreferrer" class="proj-icon-btn" title="Source Code" aria-label="View source code on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="#contact" class="proj-icon-btn preview-action-btn" data-project-id="3" title="View Details" aria-label="Open detailed project modal">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Cybertron Core // Student CLI &amp; Grade Engine</h3>
+              <p class="project-summary">
+                A terminal management engine written in C++17. Implements persistent binary serialization, a custom doubly-linked list memory structure, and linear/binary search algorithms for fast record lookups.
+              </p>
+              <div class="tech-stack-pills">
+                <span class="tech-pill">C++17</span>
+                <span class="tech-pill">Binary File I/O</span>
+                <span class="tech-pill">Custom Doubly Linked List</span>
+                <span class="tech-pill">OOP Architecture</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <button class="btn btn-sm btn-outline open-modal-btn" data-project="student-cli">Read Mission Report</button>
+              <span class="project-stat">📂 Persistent Binary Storage</span>
+            </div>
+          </article>
+
+          <!-- Project 4: Arcane Tracker // Hostel Budget -->
+          <article class="project-card glass-panel" data-category="web tools">
+            <div class="project-card-top">
+              <div class="project-badge">Arcane // Hextech UI</div>
+              <div class="project-links">
+                <a href="https://github.com/devanshsharma" target="_blank" rel="noopener noreferrer" class="proj-icon-btn" title="Source Code" aria-label="View source code on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="#contact" class="proj-icon-btn preview-action-btn" data-project-id="4" title="View Details" aria-label="Open detailed project modal">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Arcane Tracker // Student Hostel Budgeting</h3>
+              <p class="project-summary">
+                A dark aesthetic expense tracking web application tailored for college dorm life. Visualizes food, study materials, and hostel laundry spending with interactive Chart.js graphs and CSV exports.
+              </p>
+              <div class="tech-stack-pills">
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">Chart.js</span>
+                <span class="tech-pill">Blob CSV Export</span>
+                <span class="tech-pill">Dark Cyber UI</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <button class="btn btn-sm btn-outline open-modal-btn" data-project="hostel-budget">Read Mission Report</button>
+              <span class="project-stat">📊 Analytics Charts</span>
+            </div>
+          </article>
+
+          <!-- Project 5: Steins;Study // AI Flashcards -->
+          <article class="project-card glass-panel" data-category="web tools">
+            <div class="project-card-top">
+              <div class="project-badge badge-accent">Steins;Gate // AI Engine</div>
+              <div class="project-links">
+                <a href="https://github.com/devanshsharma" target="_blank" rel="noopener noreferrer" class="proj-icon-btn" title="Source Code" aria-label="View source code on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="#contact" class="proj-icon-btn preview-action-btn" data-project-id="5" title="View Details" aria-label="Open detailed project modal">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Steins;Study // AI Flashcard &amp; Quiz Generator</h3>
+              <p class="project-summary">
+                An active recall study tool that parses raw lecture transcripts into clean 3D flip-cards and rapid multiple-choice quizzes with timed scores. <em>El Psy Kongroo</em> for exam preparation.
+              </p>
+              <div class="tech-stack-pills">
+                <span class="tech-pill">REST APIs</span>
+                <span class="tech-pill">CSS 3D Transforms</span>
+                <span class="tech-pill">JSON Parser</span>
+                <span class="tech-pill">ES6 JavaScript</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <button class="btn btn-sm btn-outline open-modal-btn" data-project="smart-study">Read Mission Report</button>
+              <span class="project-stat">🤖 AI Active Recall</span>
+            </div>
+          </article>
+
+          <!-- Project 6: The Matrix // 2048 Logic Engine -->
+          <article class="project-card glass-panel" data-category="algorithms web">
+            <div class="project-card-top">
+              <div class="project-badge">Matrix // Heuristics</div>
+              <div class="project-links">
+                <a href="https://github.com/devanshsharma" target="_blank" rel="noopener noreferrer" class="proj-icon-btn" title="Source Code" aria-label="View source code on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="#contact" class="proj-icon-btn preview-action-btn" data-project-id="6" title="View Details" aria-label="Open detailed project modal">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">The Matrix // 2048 Sliding Tile Engine</h3>
+              <p class="project-summary">
+                A custom implementation of the classic 2048 game mechanics. Originally built with C++ 2D matrix slide and merge heuristics, then adapted for mobile web with touch swipe listeners and high score memory.
+              </p>
+              <div class="tech-stack-pills">
+                <span class="tech-pill">2D Matrix Math</span>
+                <span class="tech-pill">DOM Optimization</span>
+                <span class="tech-pill">Touch Events</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <button class="btn btn-sm btn-outline open-modal-btn" data-project="game-2048">Read Mission Report</button>
+              <span class="project-stat">🎮 Playable Engine</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ACHIEVEMENTS & CERTIFICATES ==================== -->
+    <section class="achievements section" id="achievements">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// 05. QUEST LOG &amp; CREDENTIALS</span>
+          <h2 class="section-title">Certificates &amp; <span class="text-gradient">Achievements</span></h2>
+          <p class="section-subtitle">Verified milestones, competitive programming streaks, and academic honors.</p>
+        </div>
+
+        <div class="achieve-grid">
+          <!-- Achievements Column -->
+          <div class="achieve-col">
+            <h3 class="column-title">
+              <span class="col-icon">🏆</span> Competitive &amp; College Honors
+            </h3>
+            <div class="achieve-cards-list">
+              <div class="achieve-card glass-panel">
+                <div class="achieve-icon-badge">🥇</div>
+                <div class="achieve-details">
+                  <span class="achieve-date">Jan 2026 // Rank: Top 5</span>
+                  <h4 class="achieve-name">Finalist — Intra-College Freshman Hackathon</h4>
+                  <p class="achieve-org">Organized by Google Developer Student Club</p>
+                  <p class="achieve-description">
+                    Engineered "CampusConnect" in a 24-hour sprint with a team of 3; commended for sleek UI and real collegiate utility.
+                  </p>
+                </div>
+              </div>
+
+              <div class="achieve-card glass-panel">
+                <div class="achieve-icon-badge">🗡️</div>
+                <div class="achieve-details">
+                  <span class="achieve-date">Active (2025 - Present)</span>
+                  <h4 class="achieve-name">150+ Quests Solved // LeetCode &amp; CodeChef</h4>
+                  <p class="achieve-org">LeetCode / CodeChef C++ Streak</p>
+                  <p class="achieve-description">
+                    Maintained a 60-day active problem streak in C++ STL. Conquered Two Pointers, Sliding Window, Linked Lists, and Binary Search.
+                  </p>
+                </div>
+              </div>
+
+              <div class="achieve-card glass-panel">
+                <div class="achieve-icon-badge">🎖️</div>
+                <div class="achieve-details">
+                  <span class="achieve-date">Dec 2025</span>
+                  <h4 class="achieve-name">Academic Dean's List // Semester Merit Honor</h4>
+                  <p class="achieve-org">University Academic Council</p>
+                  <p class="achieve-description">
+                    Secured 9.3 CGPA in First Semester B.Tech, ranking in top 5% of freshman Computer Science cohort.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificates Column -->
+          <div class="achieve-col">
+            <h3 class="column-title">
+              <span class="col-icon">📜</span> Certified Credentials
+            </h3>
+            <div class="achieve-cards-list">
+              <div class="achieve-card glass-panel">
+                <div class="achieve-icon-badge cert-icon">💻</div>
+                <div class="achieve-details">
+                  <span class="achieve-date">Feb 2026</span>
+                  <h4 class="achieve-name">CS50x: Introduction to Computer Science</h4>
+                  <p class="achieve-org">Harvard University / edX</p>
+                  <p class="achieve-description">
+                    In-depth mastery of algorithmic complexities, C memory pointers, data structures, and web technologies.
+                  </p>
+                  <span class="cert-verify-tag">Verified Credential</span>
+                </div>
+              </div>
+
+              <div class="achieve-card glass-panel">
+                <div class="achieve-icon-badge cert-icon">⭐</div>
+                <div class="achieve-details">
+                  <span class="achieve-date">Nov 2025</span>
+                  <h4 class="achieve-name">Problem Solving (Intermediate) Certificate</h4>
+                  <p class="achieve-org">HackerRank</p>
+                  <p class="achieve-description">
+                    Tested and certified in data structures, recursion, dynamic memory allocation, and algorithmic design.
+                  </p>
+                  <span class="cert-verify-tag">Verified Credential</span>
+                </div>
+              </div>
+
+              <div class="achieve-card glass-panel">
+                <div class="achieve-icon-badge cert-icon">🌐</div>
+                <div class="achieve-details">
+                  <span class="achieve-date">Oct 2025</span>
+                  <h4 class="achieve-name">Responsive Web Design Certification</h4>
+                  <p class="achieve-org">freeCodeCamp</p>
+                  <p class="achieve-description">
+                    Completed 300 hours of coursework covering modern HTML5 semantics, Flexbox, CSS Grid, and responsive UX.
+                  </p>
+                  <span class="cert-verify-tag">Verified Credential</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CAREER GOALS SECTION ==================== -->
+    <section class="career-goals section" id="career-goals">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// 06. THE 4-YEAR PROTOCOL</span>
+          <h2 class="section-title">Career Goals &amp; <span class="text-gradient">Roadmap</span></h2>
+          <p class="section-subtitle">A clear trajectory from freshman fundamentals to high-impact software engineering.</p>
+        </div>
+
+        <div class="roadmap-grid">
+          <!-- Phase 1: 1st Year (Now) -->
+          <div class="roadmap-card glass-panel phase-active">
+            <div class="phase-badge">Phase 1 • 1st Year (Active)</div>
+            <h3 class="phase-title">The Spark &amp; Foundation</h3>
+            <p class="phase-target">Target: Build an unshakeable base in problem solving &amp; web architecture.</p>
+            <ul class="phase-checklist">
+              <li class="checked">
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Master C++ STL &amp; core Data Structures</span>
+              </li>
+              <li class="checked">
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Maintain 9.0+ CGPA in university exams</span>
+              </li>
+              <li class="in-progress">
+                <span class="bullet-progress">⏳</span>
+                <span>Reach 300+ solved LeetCode algorithmic quests</span>
+              </li>
+              <li class="in-progress">
+                <span class="bullet-progress">⏳</span>
+                <span>Land a summer research / student software internship</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Phase 2: 2nd Year -->
+          <div class="roadmap-card glass-panel">
+            <div class="phase-badge">Phase 2 • 2nd Year (Next)</div>
+            <h3 class="phase-title">Gear Second: Full-Stack &amp; OSS</h3>
+            <p class="phase-target">Target: Modern backend systems, databases, and open source pull requests.</p>
+            <ul class="phase-checklist">
+              <li>
+                <span class="bullet-future">🎯</span>
+                <span>Learn backend systems (Node.js/Express &amp; PostgreSQL)</span>
+              </li>
+              <li>
+                <span class="bullet-future">🎯</span>
+                <span>Contribute to open source projects during Hacktoberfest</span>
+              </li>
+              <li>
+                <span class="bullet-future">🎯</span>
+                <span>Compete in Smart India Hackathon (SIH) &amp; major hackathons</span>
+              </li>
+              <li>
+                <span class="bullet-future">🎯</span>
+                <span>Study Operating Systems &amp; Database Management Systems (DBMS)</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Phase 3: 3rd Year -->
+          <div class="roadmap-card glass-panel">
+            <div class="phase-badge">Phase 3 • 3rd Year</div>
+            <h3 class="phase-title">S-Rank: Scale &amp; Systems</h3>
+            <p class="phase-target">Target: Distributed systems basics, advanced DSA, and corporate summer internships.</p>
+            <ul class="phase-checklist">
+              <li>
+                <span class="bullet-future">🎯</span>
+                <span>High-level &amp; Low-level System Design fundamentals</span>
+              </li>
+              <li>
+                <span class="bullet-future">🎯</span>
+                <span>Crack Tier-1 Product Company SDE Summer Internship</span>
+              </li>
+              <li>
+                <span class="bullet-future">🎯</span>
+                <span>Build full-stack AI/ML powered production systems</span>
+              </li>
+              <li>
+                <span class="bullet-future">🎯</span>
+                <span>Lead engineering initiatives in college coding chapter</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Phase 4: Long-Term Horizon -->
+          <div class="roadmap-card glass-panel">
+            <div class="phase-badge badge-accent">Phase 4 • 4th Year &amp; Beyond</div>
+            <h3 class="phase-title">Prime Software Engineer</h3>
+            <p class="phase-target">Vision: Building resilient technology that impacts millions of daily users.</p>
+            <ul class="phase-checklist">
+              <li>
+                <span class="bullet-future">🚀</span>
+                <span>Secure Full-Time Software Development Engineer (SDE) role</span>
+              </li>
+              <li>
+                <span class="bullet-future">🚀</span>
+                <span>Architect high-throughput, fault-tolerant cloud software</span>
+              </li>
+              <li>
+                <span class="bullet-future">🚀</span>
+                <span>Publish technical engineering articles and open-source packages</span>
+              </li>
+              <li>
+                <span class="bullet-future">🚀</span>
+                <span>Push the frontier of AI &amp; Software Engineering</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Vision Statement Quote -->
+        <div class="vision-quote-card glass-panel">
+          <div class="quote-mark">“</div>
+          <p class="quote-text">
+            Fate rarely calls upon us at a moment of our choosing. Even the smallest piece of clean code can transform the destiny of a system.
+          </p>
+          <span class="quote-author">— Devansh Sharma // Inspired by Optimus Prime</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// 07. TRANSMISSION FREQUENCY</span>
+          <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+          <p class="section-subtitle">Open transmission channel. Whether it's an internship inquiry, project collaboration, or anime &amp; tech banter, let's talk.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Contact Cards & Socials -->
+          <div class="contact-info-col">
+            <h3 class="contact-subheading">Initialize Transmission</h3>
+            <p class="contact-intro">
+              I monitor my communications daily and am very responsive on LinkedIn. Feel free to send a signal or copy my email directly.
+            </p>
+
+            <div class="contact-cards-list">
+              <!-- Email Card with Copy Button -->
+              <div class="contact-card glass-panel">
+                <div class="contact-card-icon">✉️</div>
+                <div class="contact-card-text">
+                  <span class="c-label">Direct Communication</span>
+                  <a href="mailto:devansh.sharma.cse@example.com" class="c-value" id="email-address-text">devansh.sharma.cse@example.com</a>
+                </div>
+                <button class="btn-copy" id="copy-email-btn" title="Copy email address" aria-label="Copy email address to clipboard">
+                  <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  <span class="copy-tooltip">Copy</span>
+                </button>
+              </div>
+
+              <!-- Location / College Card -->
+              <div class="contact-card glass-panel">
+                <div class="contact-card-icon">📍</div>
+                <div class="contact-card-text">
+                  <span class="c-label">Base Location</span>
+                  <span class="c-value">Bangalore / New Delhi, India</span>
+                  <span class="c-sub">B.Tech Campus / Open to Remote</span>
+                </div>
+              </div>
+
+              <!-- Education Status Card -->
+              <div class="contact-card glass-panel">
+                <div class="contact-card-icon">🎓</div>
+                <div class="contact-card-text">
+                  <span class="c-label">Status Level</span>
+                  <span class="c-value">1st Year Student (Class of 2029)</span>
+                  <span class="c-sub">Available for Summer '26 Internships</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links Grid with GitHub & LinkedIn -->
+            <div class="social-links-box">
+              <h4 class="socials-heading">Broadcast Nodes:</h4>
+              <div class="social-buttons-grid">
+                <a href="https://github.com/devanshsharma" target="_blank" rel="noopener noreferrer" class="social-pill-btn github-btn">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>github.com/devanshsharma</span>
+                </a>
+
+                <a href="https://linkedin.com/in/devanshsharma" target="_blank" rel="noopener noreferrer" class="social-pill-btn linkedin-btn">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  <span>linkedin.com/in/devanshsharma</span>
+                </a>
+
+                <a href="https://leetcode.com/devansh_sharma" target="_blank" rel="noopener noreferrer" class="social-pill-btn leetcode-btn">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .271 3.543 5.617 5.617 0 0 0 2.146 2.684l2.42 1.633 2.332 1.573a7.435 7.435 0 0 0 4.094 1.23 7.502 7.502 0 0 0 4.962-1.894l3.83-3.608a1.373 1.373 0 1 0-1.884-2l-3.83 3.608a4.757 4.757 0 0 1-3.148 1.202 4.717 4.717 0 0 1-2.597-.78l-2.332-1.573-2.42-1.633a2.868 2.868 0 0 1-1.095-1.37 2.82 2.82 0 0 1-.138-1.808 2.735 2.735 0 0 1 .63-1.077l3.854-4.126 5.406-5.788a1.374 1.374 0 0 0-.961-2.31zM9.82 10.976a1.374 1.374 0 0 0 0 2.748h8.508a1.374 1.374 0 1 0 0-2.748H9.82z"/></svg>
+                  <span>leetcode.com/devansh_sharma</span>
+                </a>
+
+                <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-pill-btn x-btn">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                  <span>@devansh_codes</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Contact Form -->
+          <div class="contact-form-col">
+            <div class="form-container glass-panel">
+              <h3 class="form-title">Transmit a Message</h3>
+              <p class="form-subtitle">Fill out the parameters below. Guaranteed response within 24 hours.</p>
+
+              <form id="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="name">Your Name <span class="required">*</span></label>
+                  <input type="text" id="name" name="name" class="form-control" placeholder="e.g. Elliot Alderson / Alex" required autocomplete="name">
+                  <span class="error-msg" id="name-error">Please enter your name</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Your Email Address <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" class="form-control" placeholder="e.g. ally@domain.com" required autocomplete="email">
+                  <span class="error-msg" id="email-error">Please enter a valid email address</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Purpose of Signal <span class="required">*</span></label>
+                  <select id="subject" name="subject" class="form-control" required>
+                    <option value="" disabled selected>Select transmission objective...</option>
+                    <option value="internship">💼 Internship Opportunity / Inquiry</option>
+                    <option value="project">🤝 Project Collaboration / Hackathon Squad</option>
+                    <option value="mentorship">💡 Mentorship / Technical Guidance</option>
+                    <option value="general">☕ Say Hello / Tech &amp; Anime Chat</option>
+                  </select>
+                  <span class="error-msg" id="subject-error">Please choose an objective</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Transmission Message <span class="required">*</span></label>
+                  <textarea id="message" name="message" rows="5" class="form-control" placeholder="Hi Devansh, I saw your portfolio and wanted to connect regarding..." required></textarea>
+                  <span class="error-msg" id="message-error">Please enter at least 10 characters</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                  <span class="btn-text">Transmit Signal</span>
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <span class="logo-code">//</span>
+            <span class="logo-name">Devansh</span>
+            <span class="logo-accent">.sh</span>
+          </a>
+          <p class="footer-tagline">
+            1st Year B.Tech CSE Undergrad.<br>
+            Autobot Mindset. Solo Leveling Grind. Building clean code every single day.
+          </p>
+        </div>
+
+        <div class="footer-nav-links">
+          <h4>Navigation Matrix</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Arsenal</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Quest Log</a></li>
+            <li><a href="#career-goals">Roadmap</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-socials-col">
+          <h4>Frequencies</h4>
+          <div class="footer-social-icons">
+            <a href="https://github.com/devanshsharma" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/devanshsharma" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="https://leetcode.com/devansh_sharma" target="_blank" rel="noopener noreferrer" aria-label="LeetCode" title="LeetCode">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .271 3.543 5.617 5.617 0 0 0 2.146 2.684l2.42 1.633 2.332 1.573a7.435 7.435 0 0 0 4.094 1.23 7.502 7.502 0 0 0 4.962-1.894l3.83-3.608a1.373 1.373 0 1 0-1.884-2l-3.83 3.608a4.757 4.757 0 0 1-3.148 1.202 4.717 4.717 0 0 1-2.597-.78l-2.332-1.573-2.42-1.633a2.868 2.868 0 0 1-1.095-1.37 2.82 2.82 0 0 1-.138-1.808 2.735 2.735 0 0 1 .63-1.077l3.854-4.126 5.406-5.788a1.374 1.374 0 0 0-.961-2.31zM9.82 10.976a1.374 1.374 0 0 0 0 2.748h8.508a1.374 1.374 0 1 0 0-2.748H9.82z"/></svg>
+            </a>
+          </div>
+          <p class="footer-status">🟢 System Ready for Summer '26 Internships</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2026</span> Devansh Sharma. Engineered with Minimalist Dark Standards. All rights reserved.</p>
+        <p class="customizable-tip">// "More Than Meets The Eye"</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== PROJECT DETAILS MODAL ==================== -->
+  <dialog class="project-modal" id="project-modal" aria-labelledby="modal-title">
+    <div class="modal-content glass-panel">
+      <div class="modal-header">
+        <h3 id="modal-title" class="modal-title">Project Mission Report</h3>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close project modal">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- Dynamically populated via script.js -->
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ==================== TOAST NOTIFICATION CONTAINER ==================== -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll to top" title="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
